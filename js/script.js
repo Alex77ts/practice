@@ -3,8 +3,6 @@
 let number = 5;
 const leftBorderWidth = 1;
 
-console.log(arr.[1]);
-console.log(arrObj[])
 
 let incr = 10,
     decr = 10;
@@ -66,4 +64,53 @@ for (let i = 5; i <= 10; i++) alert(i);
 
 let i = 0;
 while (++i < 5) alert( i );
+
+function sayHello(name) {
+    return `Привет, ${name}!`
+}
+
+function sayWelcome (userFirstName, userLastName) {
+    console.log(`Добро пожаловать, ${userLastName} ${userFirstName}`);
+  }
+  // 'Иван' и 'Иванов' – аргументы
+  sayWelcome('Иван', 'Иванов'); // Добро пожаловать, Иванов Иван
+  // 'Петр' и 'Петров' – аргументы
+  sayWelcome('Петр', 'Петров'); 
+
+  switch (browser) {
+    case 'Edge':
+      alert( "You've got the Edge!" );
+      break;
+  
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert( 'Okay we support these browsers too' );
+      break;
+  
+    default:
+      alert( 'We hope that this page looks ok!' );
+  }
+
+  function showMessage() {
+    alert( 'Всем привет!' );
+  }
+
+  function checkAge(age) {
+    if (age > 18) {
+      return true;
+    } else {
+      return confirm('Родители разрешили?');
+    }
+  }
+
+
+  function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+  }
 
